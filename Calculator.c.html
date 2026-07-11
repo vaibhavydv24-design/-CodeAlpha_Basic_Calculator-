@@ -1,0 +1,61 @@
+<html>
+<head>
+<meta charset="UTF-8">
+</head>
+<body>
+
+<p class="p1">#include &lt;stdio.h&gt;</p>
+
+<p class="p1">int main() {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>int choice;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>float num1, num2, result;</p>
+
+<p class="p1"><span class="Apple-converted-space">    </span>printf("===== BASIC CALCULATOR =====\n");</p>
+<p class="p1"><span class="Apple-converted-space">    </span>printf("1. Addition\n");</p>
+<p class="p1"><span class="Apple-converted-space">    </span>printf("2. Subtraction\n");</p>
+<p class="p1"><span class="Apple-converted-space">    </span>printf("3. Multiplication\n");</p>
+<p class="p1"><span class="Apple-converted-space">    </span>printf("4. Division\n");</p>
+
+<p class="p1"><span class="Apple-converted-space">    </span>printf("Enter your choice (1-4): ");</p>
+<p class="p1"><span class="Apple-converted-space">    </span>scanf("%d", &amp;choice);</p>
+
+<p class="p1"><span class="Apple-converted-space">    </span>printf("Enter first number: ");</p>
+<p class="p1"><span class="Apple-converted-space">    </span>scanf("%f", &amp;num1);</p>
+
+<p class="p1"><span class="Apple-converted-space">    </span>printf("Enter second number: ");</p>
+<p class="p1"><span class="Apple-converted-space">    </span>scanf("%f", &amp;num2);</p>
+
+<p class="p1"><span class="Apple-converted-space">    </span>switch(choice) {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>case 1:</p>
+<p class="p1"><span class="Apple-converted-space">            </span>result = num1 + num2;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>printf("Result = %.2f\n", result);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>break;</p>
+
+<p class="p1"><span class="Apple-converted-space">        </span>case 2:</p>
+<p class="p1"><span class="Apple-converted-space">            </span>result = num1 - num2;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>printf("Result = %.2f\n", result);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>break;</p>
+
+<p class="p1"><span class="Apple-converted-space">        </span>case 3:</p>
+<p class="p1"><span class="Apple-converted-space">            </span>result = num1 * num2;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>printf("Result = %.2f\n", result);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>break;</p>
+
+<p class="p1"><span class="Apple-converted-space">        </span>case 4:</p>
+<p class="p1"><span class="Apple-converted-space">            </span>if(num2 != 0) {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>result = num1 / num2;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>printf("Result = %.2f\n", result);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>} else {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>printf("Error! Division by zero is not allowed.\n");</p>
+<p class="p1"><span class="Apple-converted-space">            </span>}</p>
+<p class="p1"><span class="Apple-converted-space">            </span>break;</p>
+
+<p class="p1"><span class="Apple-converted-space">        </span>default:</p>
+<p class="p1"><span class="Apple-converted-space">            </span>printf("Invalid Choice!\n");</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+
+<p class="p1"><span class="Apple-converted-space">    </span>return 0;</p>
+<p class="p1">}</p>
+
+</body>
+</html>
